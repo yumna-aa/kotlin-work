@@ -3,5 +3,17 @@
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-    // Add your code here
+    if (args.size != 1) {
+        println("Please provide one argument")
+        return
+    }
+
+    val n = args[0].toInt()
+    var sum = 0
+
+    for (i in 1..n) {
+        sum += i 
+    }
+    println("Sum = $sum")
+    
 }
